@@ -2,6 +2,16 @@
 	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
 	"contentVersion": "1.0.0.0",
 	"parameters": {
+		"quarkBuildsStorageAccountName": {
+		    "type": "string",
+		    "defaultValue": "qppbuilds"
+		},
+
+		"quarkBuildsStorageAccountKey": {
+		    "type": "string",
+		    "defaultValue": "otV+tUjIi6NpkPB0mVTEWwnr4P4kVfw0YrSqmgj+uUHoctF1WMbnhB9adBfBJ4zxuKpFGNBj415P3iu/sEyCbQ=="
+		},
+
 		"appGatewaySkuSize": {
 			"defaultValue": "Standard_Medium",
 			"type": "String",
@@ -98,17 +108,9 @@
 			"metadata": {
 			 "description": "Azure Storage replication type. For details: https://docs.microsoft.com/en-gb/azure/storage/common/storage-redundancy#read-access-geo-redundant-storage ."
 			}
-		},
-
-		"quarkBuildsStorageAccountName": {
-		    "type": "string",
-		    "defaultValue": "qppbuilds"
-		},
-
-		"quarkBuildsStorageAccountKey": {
-		    "type": "string",
-		    "defaultValue": "otV+tUjIi6NpkPB0mVTEWwnr4P4kVfw0YrSqmgj+uUHoctF1WMbnhB9adBfBJ4zxuKpFGNBj415P3iu/sEyCbQ=="
 		}
+
+		
 	},
 	"variables": {
 		"namingSuffix": "[toLower(substring(uniqueString(resourceGroup().id), 0, 9))]",
