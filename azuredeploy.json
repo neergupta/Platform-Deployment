@@ -9,7 +9,7 @@
 
 		"quarkBuildsStorageAccountKey": {
 		    "type": "string",
-		    "defaultValue": "otV+tUjIi6NpkPB0mVTEWwnr4P4kVfw0YrSqmgj+uUHoctF1WMbnhB9adBfBJ4zxuKpFGNBj415P3iu/sEyCbQ=="
+		    "defaultValue": ""
 		},
 
 		"appGatewaySkuSize": {
