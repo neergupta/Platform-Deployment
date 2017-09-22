@@ -151,7 +151,7 @@
 
 		"qlaServerIP": {
 		    "type": "string",
-		    "defaultValue": "66.77.109.148"
+		    "defaultValue": ""
 		}, 
 		"qlaServerPort": {
 		    "type": "string",
@@ -159,11 +159,11 @@
 		},
 		"qlaSerialNumberForQpp": {
 		    "type": "string",
-		    "defaultValue": "QS51540435891"
+		    "defaultValue": ""
 		},
 		"qlaSerialNumberForQxps": {
 		    "type": "string",
-		    "defaultValue": "DG51381515862"
+		    "defaultValue": ""
 		}
 
 	},
