@@ -802,7 +802,7 @@
 	"outputs": {
 		"platformGatewayIp": {
 			"type": "string",
-			"value" : "[concat('Platform Gateway IP ', reference(variables('gwPublicIpAddressName')).properties.ipAddress)]"
+			"value": "[concat('Platform Gateway IP ', variables('gwPublicIpAddressName') )]"
 		}
 	}
 }
